@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X University</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <section class="main container">
+      <div class="title">Important Dates:</div>
+      <ul>
+        <li>
+          Start date of admission : 15/12/2020
+        </li>
+        <li>Last date of admission : 15/01/2021
+        </li>
+        <li>
+         Start date of commencement of programme : 01/03/2021
+        </li>
+        <li>
+          Medium of instruction : English
+        </li>
+        <li>
+          Eligibility Criteria : 10+2 / Intermediate from recognised board.
+        </li>
+        <li>
+          Total fee of the Programme : 40,200
+        </li>
+      </table>
+    </section>
+  <script>
+    fetch('/header.html')
+      .then((r) => r.text())
+      .then((v) => (document.querySelector('header').innerHTML = v));
+  </script>
+  </body>
+</html>

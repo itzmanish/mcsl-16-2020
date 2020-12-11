@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X University</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header></header>
+    <section class="main container">
+      <div class="title">Registration Form:</div>
+      <form class="form" onsubmit="return validateForm();">
+        <label>Name of Student:</label> <br />
+        <input type="text" name="name" placeholder="John" /> <br />
+
+        <label>Email:</label> <br />
+        <input type="text" name="email" placeholder="john@doe.com" />
+        <br />
+        <label>Phone:</label> <br />
+        <input type="text" name="phone" placeholder="9876543210" /> <br />
+        <label>Qualification of student:</label> <br />
+        <input
+          type="text"
+          name="qualification"
+          placeholder="Your Qualification"
+        />
+        <br />
+        <label>Programme:</label> <br />
+        <input type="text" name="programme" placeholder="Programme Name" />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function validateForm() {
+      var elements = document.getElementsByClassName('form')[0].elements;
+      var formIsValid = true;
+      for (var i = 0, element; (element = elements[i++]); ) {
+        if (element.type === 'text' && element.value === '') {
+          formIsValid = false;
+        }
+      }
+      if (!formIsValid) alert('one of the field is empty');
+    }
+    fetch('/header.html')
+      .then((r) => r.text())
+      .then((v) => (document.querySelector('header').innerHTML = v));
+  </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X University</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <section class="main container">
+      <div class="welcome-bg">
+        <div class="bg"></div>
+        <div class="title">Welcome to X University.</div>
+        <div class="subtitle">
+          Where we believe Knowledge is actual power to make this world
+          beautiful and sustainable.
+        </div>
+      </div>
+      <div id="aim-and-objective">
+        <div class="title">Our Aims & Objective:</div>
+        <p class="subtitle">
+          <li>
+            teaching facilities and individual or small-group supervision, as
+            well as pastoral , administrative and academic support through its
+            tutorial systems
+          </li>
+          <li>
+            social, cultural, musical, recreational and sporting facilities to
+            enable each of its students to realise as much as possible of their
+            academic and personal potential while studying at the College
+          </li>
+          <li>
+            specialist choral musical education for its choristers who make up
+            the College's renowned choir
+          </li>
+        </p>
+      </div>
+      <div id="strength">
+        <div class="title">Key strength of X University:</div>
+        <p class="subtitle">
+          The University has three research institutes: Health and Human
+          Sciences Research Institute; Science and Technology Research
+          Institute; Social Sciences, Arts and Humanities Research Institute.
+        </p>
+      </div>
+    </section>
+  </body>
+  <script>
+    fetch('/header.html')
+      .then((r) => r.text())
+      .then((v) => (document.querySelector('header').innerHTML = v));
+  </script>
+</html>

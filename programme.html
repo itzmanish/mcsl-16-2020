@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X University</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header></header>
+
+    <section class="main container">
+      <div class="title">Programme List</div>
+      <table style="width: 100%">
+        <tr>
+          <td>Programme Name</td>
+          <td>Bachelor of Computer Applications (BCA)</td>
+        </tr>
+        <tr>
+          <td>Duration</td>
+          <td>3 Year</td>
+        </tr>
+        <tr>
+          <td>Programme Code</td>
+          <td>BCA</td>
+        </tr>
+        <tr>
+          <td>Medium of instruction</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Eligibility Criteria</td>
+          <td>10+2 / Intermediate from recognised board.</td>
+        </tr>
+        <tr>
+          <td>Total fee of the Programme</td>
+          <td>40,200</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+  <script>
+    fetch('/header.html')
+      .then((r) => r.text())
+      .then((v) => (document.querySelector('header').innerHTML = v));
+  </script>
+</html>
