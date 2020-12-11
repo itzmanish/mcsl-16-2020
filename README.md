@@ -2,3 +2,5 @@
 MCSL 16 Lab assignment for 2020 
 
 This repo contains assignment for MCSL 16 Semester 4 BCA IGNOU
+
+Live demo - https://itzmanish.github.io/mcsl-16-2020/
